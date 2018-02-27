@@ -10,6 +10,7 @@ const getEntityId = (node) => {
       entityConfig.url = node.href;
       entityConfig.text = node.innerHTML;
       entityConfig.value = node.dataset.value;
+      entityConfig.id = node.dataset.id;
       entityId = Entity.__create(
         'MENTION',
         'IMMUTABLE',
